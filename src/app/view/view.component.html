@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)] = "countryName">
+<button (click) = "search()">search</button>
+
+<div *ngIf = "b">
+    <p>Country Name: {{country[0].name}}</p>
+    <p>Capital city: {{country[0].capital}}</p>
+    <p>Region: {{country[0].region}}</p>
+    <p>Area: {{country[0].subregion}}</p>
+    <p>Time Zones: {{country[0].timezones}}</p>
+    <p>Population: {{country[0].population}}</p>
+</div>
